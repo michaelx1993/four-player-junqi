@@ -13,6 +13,9 @@ open index.html
 ```sh
 npm test
 npm run build
+npm run smoke
 ```
+
+`npm run build` 会生成默认浏览器入口使用的 `dist/app.bundle.js`，避免 `file://` 直接打开时依赖 ES module 加载。
 
 已实现红、蓝、绿、黄四方预设布局、道路/铁路/行营/大本营标识、基础走子、工兵铁路连续移动、炸弹同归于尽、工兵排雷、夺旗出局、暗棋展示、战报、胜负提示和重新开始。

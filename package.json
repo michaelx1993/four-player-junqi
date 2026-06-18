@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "test": "node --test tests/*.test.mjs",
-    "build": "node scripts/check-static.mjs"
+    "build": "node scripts/build-browser.mjs && node scripts/check-static.mjs",
+    "smoke": "node scripts/smoke-direct-open.mjs"
   }
 }
