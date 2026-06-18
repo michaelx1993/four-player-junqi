@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>四国军旗</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="game-surface" aria-label="四国军旗棋盘">
+        <div class="topbar">
+          <div>
+            <h1>四国军旗</h1>
+            <p id="turnText" class="subtle">红方回合</p>
+          </div>
+          <button id="restartButton" class="primary-action" type="button">重新开始</button>
+        </div>
+
+        <div class="play-area">
+          <section class="board-wrap">
+            <div id="board" class="board" role="grid" aria-label="四国军旗棋盘"></div>
+          </section>
+
+          <aside class="side-panel" aria-label="对局信息">
+            <section class="status-panel">
+              <h2>阵营</h2>
+              <div id="teams" class="teams"></div>
+            </section>
+
+            <section class="status-panel">
+              <h2>选中</h2>
+              <p id="selectionText" class="info-line">未选中棋子</p>
+            </section>
+
+            <section class="status-panel">
+              <h2>战报</h2>
+              <ol id="battleLog" class="battle-log" aria-live="polite"></ol>
+            </section>
+
+            <section class="status-panel result-panel">
+              <h2>胜负</h2>
+              <p id="winnerText" class="info-line">对局进行中</p>
+            </section>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="./src/app.js"></script>
+  </body>
+</html>
